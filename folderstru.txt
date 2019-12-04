@@ -1,0 +1,62 @@
+Folder Structure
+
+ServiceName:HMMasterService
+
+com.crts.app.hm.main
+	-
+	-
+
+com.crts.app.hm.main.controller
+	-HomeController
+
+com.crts.app.hm.main.service
+	-IService
+	-Serviceimpl
+
+com.crts.app.hm.main.repository
+	-IBranchRepository
+	-IRoleRepository
+	-IStateRepository
+	-IDistrictRepository
+	-ILoanTypeRepository
+	-IDealerDetailsRepository
+	-IStatusMasterRepository
+	-IBranchTypeRepository
+	-IUserRepository
+	-IUserDetailsRepository
+	-IAddressRepository
+
+com.crts.app.hm.main.model
+
+	-Branch
+	-Role
+	-State
+	-District
+	-LoanType
+	-DealerDetails
+	-StatusMaster
+	-BranchType
+	-User
+	-UserDetails
+	-Address
+
+com.crts.app.hm.main.dto
+
+	-BranchDto
+	-RoleDto
+	-StateDto
+	-DistrictDto
+	-LoanTypeDto
+	-DealerDetailsDto
+	-StatusMasterDto
+	-BranchTypeDto
+	-UserDto
+	-UserDetailsDto
+	-AddressDto
+
+com.crts.app.hm.main.exception
+
+com.crts.app.hm.main.config
+
+com.crts.app.hm.main.utility
+
