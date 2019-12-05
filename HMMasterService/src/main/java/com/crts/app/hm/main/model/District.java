@@ -5,7 +5,7 @@ public class District {
 	private int districtId;
 	private String districtName;
 	private int districtCode;
-	private State districtStateId;
+	private State stateCode;
 	private StatusMaster districtStatus;
 	
 	

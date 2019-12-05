@@ -4,11 +4,10 @@ public class Branch {
 	private int branchId;
 	private String branchName;
 	private int branchCode;
-	private int branchStateId;
-	private int branchDistrictId;
+	private int stateCode;
+	private int districtCode;
 	private StatusMaster branchStatus;
-	private String branchAddress;
+	private Address branchAddress;
 	private long branchContactNo;
 	
-
 }

@@ -4,5 +4,6 @@ public class StatusMaster {
 	
 	private int statusId;
 	private String statusName;
+	private int statusCode;
 
 }

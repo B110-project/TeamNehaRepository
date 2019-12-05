@@ -4,12 +4,12 @@ public class DealerDetails {
 	
 	private int dealerId;
 	private String dealerName;
-	private String delerAddress;
+	private Address delerAddress;
 	private Long dealerContactNo;
 	private int dealerBankId;
 	private StatusMaster dealerStatus;
-	private Long dealerAccNo;
-	private String AccType;
+	private Long dealerAccountNo;
+	private String AccountType;
 	private String dealerEmailId;
 	private String dealerCode;
 	
