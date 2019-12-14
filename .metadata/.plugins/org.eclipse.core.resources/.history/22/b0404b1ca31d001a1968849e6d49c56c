@@ -1,0 +1,21 @@
+package com.crts.app.hm.main.Dto;
+
+public class EnquiryDto {
+	
+	private int enquiryId;
+	private String firstName;
+	private String middleName;
+	private String lastName;
+	private String panNo;
+	private String aadhaarNo;
+	private long mobileNo;
+	private String emailId;
+	private String gender;
+	private String leadNo;
+	private int leadStatus;
+	private String branchCode;
+	private double loanAmount;
+	private String loanType;
+	private String employmentType;
+
+}
