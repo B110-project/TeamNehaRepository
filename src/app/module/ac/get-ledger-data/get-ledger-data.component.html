@@ -1,0 +1,49 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="header">
+                      <h4 style="text-align: center" class="title">Ledger Data</h4>
+                  </div>
+                  <div class="content table-responsive table-full-width">
+                        <table class="table table-hover table-striped">
+                              <thead>
+                                  <tr>
+                                      <td>LedgerId<td>
+                                      <td>LeadNo</td>
+                                      <td>LoanNo</td>
+                                      <td>LoanAmount</td>
+                                      <td>RateOfInterest</td>
+                                      <td>Tenure</td>
+                                      <td>EmiDueDate</td>
+                                      <td>EmiAmount</td>
+                                      <td>Interest</td>
+                                      <td>Principal</td>
+                                      <td>ClosingAmount</td>
+                                      <td>TatalAmount</td>
+                                      <td>Status</td>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr *ngFor="let i of allData">
+                                      <td>{{i.ledgerId}}</td>
+                                      <td>{{i.leadNo}}</td>
+                                      <td>{{i.loanNo}}</td>
+                                      <td>{{i.loanAmount}}</td>
+                                      <td>{{i.rateOfInterest}}</td>
+                                      <td>{{i.tenure}}</td>
+                                      <td>{{i.emiDueDate}}</td>
+                                      <td>{{i.emiAmount}}</td>
+                                      <td>{{i.interest}}</td>
+                                      <td>{{i.principal}}</td>
+                                      <td>{{i.closingAmount}}</td>
+                                      <td>{{i.tatalAmount}}</td>
+                                      <td>{{i.status}}</td>
+                                  </tr>
+                              </tbody>
+                        </table>
+
+                  </div>
+              </div>
+          </div>
