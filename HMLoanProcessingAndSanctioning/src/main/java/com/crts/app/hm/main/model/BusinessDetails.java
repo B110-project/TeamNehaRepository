@@ -1,7 +1,6 @@
 package com.crts.app.hm.main.model;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
@@ -77,6 +76,6 @@ public class BusinessDetails
 				+ ", firmType=" + firmType + ", firmAddress=" + firmAddress + "]";
 	}
 	
-	
+	//only checking
 	
 }

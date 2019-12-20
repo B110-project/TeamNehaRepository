@@ -1,7 +1,6 @@
 package com.crts.app.hm.main.model;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
@@ -77,3 +76,4 @@ public class SalariedDetails
 
 	
 }
+

@@ -13,11 +13,9 @@ import org.springframework.stereotype.Service;
 import com.crts.app.hm.main.customeexception.EnquiryDetailNotAvailableException;
 import com.crts.app.hm.main.dto.CibilDto;
 import com.crts.app.hm.main.dto.EnquiryDto;
-import com.crts.app.hm.main.dto.StatusMasterDto;
 import com.crts.app.hm.main.model.Cibil;
 import com.crts.app.hm.main.model.Enquiry;
-import com.crts.app.hm.main.model.StatusMaster;
-import com.crts.app.hm.main.repository.ICreditManagerRepository;
+import com.crts.app.hm.main.repository.ICMRepository;
 import com.crts.app.hm.main.repository.IEnquiryRepository;
 import com.crts.app.hm.main.repository.IStatusMasterRepository;
 
@@ -25,7 +23,7 @@ import com.crts.app.hm.main.repository.IStatusMasterRepository;
 public class ICMServiceImpl implements ICMService {
 
 	@Autowired
-	ICreditManagerRepository icm;
+	ICMRepository icm;
 
 	@Autowired
 	IStatusMasterRepository istatusMaster;

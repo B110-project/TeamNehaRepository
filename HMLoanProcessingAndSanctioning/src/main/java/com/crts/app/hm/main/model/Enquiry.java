@@ -1,13 +1,9 @@
 package com.crts.app.hm.main.model;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumns;
 import javax.persistence.OneToOne;
-
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 public class Enquiry

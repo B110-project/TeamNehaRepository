@@ -4,8 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class FamilyDetails 
-{
+public class FamilyDetails {
 	@Id
 	private int familyDetailsId;
 	private int customerDependentMembers;

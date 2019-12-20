@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.crts.app.hm.main.model.Cibil;
 import com.crts.app.hm.main.model.StatusMaster;
 @Repository
-public interface ICreditManagerRepository extends CrudRepository<Cibil, Integer>{
+public interface ICMRepository extends CrudRepository<Cibil, Integer>{
 
 	
 }
