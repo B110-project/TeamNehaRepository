@@ -1,0 +1,22 @@
+<p>loan works!</p>
+<form>
+    <table>
+        <tr>
+            <td>LoanAmount</td>
+            <td><input type="text" placeholder="plz enter ur loanAmount" [(ngModel)]="loan.loanAmount" name="loanAmount"></td>
+        </tr>
+        <tr>
+            <td>Tenure</td>
+            <td><input type="text" placeholder="plz enter ur Tenure" [(ngModel)]="loan.Tenure" name="Tenure"></td>
+        </tr>
+        <tr>
+            <td>marginAmount</td>
+            <td><input type="text" placeholder="plz enter ur marginAmount" [(ngModel)]="loan.marginAmount" name="marginAmount"></td>
+        </tr>
+        <tr>
+            <td>loanType</td>
+            <td><input type="text" placeholder="plz enter ur LoanType" [(ngModel)]="loan.LoanType" name="LoanType"></td>
+        </tr>
+    </table>
+    <button (click)="submit(lo)">Submit Here</button>
+</form>

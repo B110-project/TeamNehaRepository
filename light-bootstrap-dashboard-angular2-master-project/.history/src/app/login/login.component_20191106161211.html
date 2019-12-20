@@ -1,0 +1,24 @@
+<!-- <p>
+  login works!
+</p> -->
+<div>
+  <div style="float: left; height: 100%; width: 15%;">
+    <div class="wrapper">
+      <div class="sidebar" data-color="red" data-image="">
+        <app-sidebar></app-sidebar>
+        <div
+          class="sidebar-background"
+          style="background-image: url(assets/img/sidebar-5.jpg)"
+        ></div>
+      </div>
+    </div>
+  </div>
+  <div style="float: unset; "> 
+    <input type="text" [(ngModel)]="username" placeholder="enter username" />
+    <br /><br /><br />
+    <input type="text" [(ngModel)]="password" placeholder="enter username" />
+    <br /><br /><br />
+    <input type="button" (click)="login(username, password)" value="login" />
+    <br /><br /><br />
+  </div>
+</div>

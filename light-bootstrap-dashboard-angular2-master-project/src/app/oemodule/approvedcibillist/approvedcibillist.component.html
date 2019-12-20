@@ -1,0 +1,60 @@
+<p>Approved Cibil List</p>
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Approved List Of Customers</h4>
+                        <p class="category">Here is a subtitle for this table</p>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                          <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>EnquiryId</th>
+                                        <th>FirstName</th>
+                                        <th>MiddleName</th>
+                                        <th>LastName</th>
+                                        <th>PanNo</th>
+                                        <th>AadhaarNo</th>
+                                        <th>MobileNo</th>
+                                        <th>EmailId</th>
+                                        <th>Gender</th>
+                                        <th>LeadNo</th>
+                                        <th>StatusCode</th>
+                                        <th>BranchCode</th>
+                                        <th>LoanAmount</th>
+                                        <th>LoanType</th>
+                                        <th>EmploymentType</th>
+                                        <th>SanctionStatus</th>
+                                        <th>SanctionStatus</th>
+                                    </tr>
+                                </thead>
+                                <tr *ngFor = 'let e of alldata'>
+                                    <td>{{e.enquiryId}}</td>
+                                    <td>{{e.firstName}}</td>
+                                    <td>{{e.middleName}}</td>
+                                    <td>{{e.lastName}}</td>
+                                    <td>{{e.panNo}}</td>
+                                    <td>{{e.aadhaarNo}}</td>
+                                    <td>{{e.mobileNo}}</td>
+                                    <td>{{e.emailId}}</td>
+                                    <td>{{e.gender}}</td>
+                                    <td>{{e.leadNo}}</td>
+                                    <td>{{e.statusCode}}</td>
+                                    <td>{{e.branchCode}}</td>
+                                    <td>{{e.loanAmount}}</td>
+                                    <td>{{e.loanType}}</td>
+                                    <td>{{e.employmentType}}</td>
+                                    <td><button (click)="loanApproved(e.statusCode)">Approved</button></td>
+                                    <td><button (click)="loanRejected(e.statusCode)">Rejected</button></td>
+                                </tr>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

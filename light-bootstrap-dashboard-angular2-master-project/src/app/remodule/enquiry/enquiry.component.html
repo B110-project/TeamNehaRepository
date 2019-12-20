@@ -1,0 +1,82 @@
+<p>enquiry works!</p>
+<form>
+    <table>
+        <tr>
+            <td>FirstName</td>
+            <td><input type="text" placeholder="plz enter ur name" [(ngModel)]="enquiry.firstName" name="firstName"></td>
+        </tr>
+        <tr>
+            <td>MiddleName</td>
+            <td><input type="text" placeholder="plz enter ur name" [(ngModel)]="enquiry.middleName" name="middleName"></td>
+        </tr>
+        <tr>
+            <td>LastName</td>
+            <td><input type="text" placeholder="plz enter ur name" [(ngModel)]="enquiry.lastName" name="lastName"></td>
+        </tr>
+        <tr>
+            <td>PanNo</td>
+            <td><input type="text" placeholder="plz enter ur pannumber" [(ngModel)]="enquiry.panNo" name="panNo"></td>
+        </tr>
+        <tr>
+            <td>AadharNo</td>
+            <td><input type="text" placeholder="plz enter ur aadharnumber" [(ngModel)]="enquiry.aadharNo" name="aadharNo"></td>
+        </tr>
+        <tr>
+            <td>MobileNo</td>
+            <td><input type="text" placeholder="plz enter ur mobilenumber" [(ngModel)]="enquiry.mobileNo" name="mobileNo"></td>
+        </tr>
+        <tr>
+            <td>EmailId</td>
+            <td><input type="text" placeholder="plz enter ur email" [(ngModel)]="enquiry.emailId" name="emailId"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><select>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>leadNumber</td>
+            <td><input type="text" placeholder="plz enter ur leadNo" [(ngModel)]="enquiry.leadNo" name="leadNo"></td>
+        </tr>
+        <tr>
+            <td>leadStatus</td>
+            <td><input type="number" placeholder="plz enter ur leadStatus" [(ngModel)]="enquiry.leadStatus" name="leadStatus"></td>
+        </tr>
+        <tr>
+            <td>BranchCode</td>
+            <td><input type="text" placeholder="plz enter ur BranchCode" [(ngModel)]="enquiry.branchCode" name="branchCode"></td>
+        </tr>
+        <tr>
+            <td>LoanAmount</td>
+            <td><input type="number" placeholder="plz enter ur LoanAmount" [(ngModel)]="enquiry.loanAmount" name="loanAmount"></td>
+        </tr>
+        <tr>
+            <td>LoanType</td>
+            <td><input type="text" placeholder="plz enter ur LoanType" [(ngModel)]="enquiry.loanType" name="loanType"></td>
+        </tr>
+        <tr>
+            <td>EmployementType</td>
+           
+            <td><select>
+                <option value="Salaried">Salaried</option>
+                <option value="Buisness">Buisness</option>
+                </select></td>
+           
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" placeholder="plz enter ur Address" [(ngModel)]="enquiry.address" name="address"></td>
+        </tr>
+        <tr>
+            <td>Salaried</td>
+            <td><input type="text" placeholder="plz enter ur SalaraiedDetails" [(ngModel)]="enquiry.salaried" name="salaried"></td>
+        </tr>
+        <tr>
+            <td>Business</td>
+            <td><input type="text" placeholder="plz enter ur BusinessDetails" [(ngModel)]="enquiry.business" name="business"></td>
+        </tr>
+    </table>
+    <button (click)="submit(enq)">Submit Here</button>
+</form>
