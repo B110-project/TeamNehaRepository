@@ -1,0 +1,171 @@
+
+<p>Note-:</p>
+
+      
+    <div class="container">
+      
+      <div class="row centered-form">
+      
+      <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Enter Values to Calculate EMI </h3>
+             </div>
+           <div class="panel-body ">
+            <form role="form">
+            
+              <div class="text-center">
+                
+                <mat-form-field appearance="fill">
+                  <mat-label>Enter Loan Amount</mat-label>
+                  
+                  <input matInput [(ngModel)]="loan.loanAmount" name="loanAmount" placeholder="Enter Loan Amount">
+                   <mat-hint>ex:1000000</mat-hint>
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>Enter Tenure</mat-label>
+                    <input matInput [(ngModel)]="loan.tenure" name="tenure" placeholder="Enter Tenure"><br>
+                     <mat-hint>ex:In Months</mat-hint>
+                  </mat-form-field>
+                  <br>
+                  <div class = "button-row">
+                  <button mat-raised-button (click)="calculateEmi(loan)">Calculate EMI</button>
+                </div>
+                </div>
+            
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+ 
+
+
+
+
+
+<div class="container">
+    
+  <div class="form">
+      <div class="note">
+          <p></p>
+      </div>
+      
+      <div class="form-content" >
+        
+          <div class="row">
+              <div class="col-md-4">
+                <mat-form-field appearance="standard">
+                  <mat-label>Loan Amount</mat-label>
+                  <input matInput [(ngModel)]="loandto.loanAmount">
+                  <mat-icon matSuffix> <i class="fa fa-inr" aria-hidden="true" ></i></mat-icon>
+                  
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="standard">
+                  <mat-label>Rate Of Interest</mat-label>
+                  <input matInput [(ngModel)]="loandto.rateOfInterest">
+                  <mat-icon matSuffix> <i class="fa fa-percent" aria-hidden="true" ></i></mat-icon>
+                  
+                  
+                </mat-form-field>
+              </div>
+              <div class="col-md-4">
+                <mat-form-field appearance="standard">
+                  <mat-label>Tenure</mat-label>
+                  <input matInput [(ngModel)]="loandto.tenure">
+                  <mat-icon matSuffix>date_range</mat-icon>
+                  
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="standard">
+                    
+                  <mat-label>Margin Amount</mat-label>
+                  <input matInput [(ngModel)]="loandto.marginAmount">
+                  <mat-icon matSuffix> <i class="fa fa-inr" aria-hidden="true" ></i></mat-icon>
+                 
+                  
+                </mat-form-field>
+              </div>
+              <div class="col-md-4">
+                <mat-form-field appearance="standard">
+                <mat-label>EMI Amount<small>(per Month)</small></mat-label>
+                <input matInput [(ngModel)]="loandto.emiAmount">
+                <mat-icon matSuffix> <i class="fa fa-inr" aria-hidden="true" ></i></mat-icon>
+                
+              </mat-form-field>
+              <br> 
+              <mat-form-field appearance="standard">
+                <mat-label>Processing Fees</mat-label>
+                
+                <input matInput [(ngModel)]="loandto.processingFees">
+                <mat-icon matSuffix> <i class="fa fa-inr" aria-hidden="true" ></i></mat-icon>
+                
+                
+                
+              </mat-form-field>
+          </div>
+          </div>          
+          <div class="row">
+            <div class="col-md-4">
+              <mat-form-field appearance="standard">
+                <mat-label>Other Charges</mat-label>
+                <input matInput [(ngModel)]="loandto.otherCharges">
+                <mat-icon matSuffix> <i class="fa fa-inr" aria-hidden="true" ></i></mat-icon>
+              </mat-form-field>
+              <br>
+              <mat-form-field appearance="standard">
+                <mat-label>Total Amount</mat-label>
+                <input matInput [(ngModel)]="loandto.totalAmount">
+                <mat-icon matSuffix> <i class="fa fa-inr" aria-hidden="true" ></i></mat-icon>
+                
+              </mat-form-field>
+            </div>
+            <div class="col-md-4">
+              <mat-form-field appearance="standard">
+                <mat-label>Lead No.</mat-label>
+                <input matInput [(ngModel)]="loandto.leadNo">
+                <mat-icon matSuffix>contacts</mat-icon>
+                
+              </mat-form-field>
+              <br>
+              <mat-form-field appearance="standard">
+                <mat-label>Loan No.</mat-label>
+                <input matInput [(ngModel)]="loandto.loanNo">
+                <mat-icon matSuffix>contacts</mat-icon>
+                
+              </mat-form-field>
+            </div>
+            <div class="col-md-4">
+              <mat-form-field appearance="standard">
+              <mat-label>Loan Type</mat-label>
+              <input matInput [(ngModel)]="loandto.loanType">
+              <mat-icon matSuffix>queue</mat-icon>
+              
+            </mat-form-field>
+            <br> 
+            <mat-form-field appearance="standard">
+              <mat-label>Status</mat-label>
+              <input matInput [(ngModel)]="loandto.status">
+              <mat-icon matSuffix>check_circle</mat-icon>
+              
+            </mat-form-field>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <mat-form-field appearance="standard">
+              <mat-label>Customer Id</mat-label>
+              <input matInput [(ngModel)]="loandto.customerId">
+              <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+            </div>
+            </div>
+            <button class="btnSubmit" (click)="postEmiData(loandto)">Submit</button>
+      </div>
+  </div>
+</div>
+
+
